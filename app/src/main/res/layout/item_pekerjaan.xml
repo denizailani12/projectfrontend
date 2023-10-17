@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/layout_items_pekerjaan"
+    android:layout_marginVertical="3dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_pekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_pekerjaan"/>
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:id="@+id/tv_nama_pekerjaan"
+            android:text="Nama Pekerjaan"/>
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Perusahaan"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tv_perusahaan"/>
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durasi Bekerja"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tv_durasi_bekerja"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
